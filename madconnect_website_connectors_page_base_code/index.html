@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no, maximum-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>MadConnect</title>
+  <link rel="stylesheet" href="/resources/css/styles.css">
+  <link rel="stylesheet" href="/resources/css/responsive.css">
+  <link rel="stylesheet" href="/resources/css/connectors.css">
+  <link rel="stylesheet" href="/resources/css/connector-detail.css">
+  <link rel="stylesheet" href="/resources/css/markdown.css">
+  <link rel="icon" type="image/png" href="/resources/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/resources/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/resources/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="MadConnect" />
+  <link rel="manifest" href="/resources/favicon/site.webmanifest" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>madconnect-connectors-v2_react</title>
+</head>
+
+<body>
+
+  <div id="_include-news-bar"></div>
+  <script>
+    $(() => {
+      $("#_include-news-bar").load("/_news-bar-include.html");
+    });
+  </script>
+
+  <header class="header">
+    <div id="_include-header-container"></div>
+    <script>
+      $(() => {
+        $("#_include-header-container").load("/_header-include.html");
+      });
+    </script>
+  </header>
+
+  <div id="root"></div>
+  <div id="_include-footer"></div>
+  <script>
+    $(() => {
+      $("#_include-footer").load("/_footer-include.html");
+    });
+  </script>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
